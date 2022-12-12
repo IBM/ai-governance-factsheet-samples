@@ -1,0 +1,6 @@
+name,type,description,placeholder,is_array,required,hidden,readonly,default_value,label,minimum,maximum,min_length,max_length,is_searchable
+TrainingData_Size,integer,Number of records in the training data,desc of userattrstr,false,true,false,false,0,TrainingData_Size,,,,,true
+TrainingData_Ratio,string,Percentage of records in the training data,Percentage of records in the training data,false,true,false,false,0,TrainingData_Ratio,,,,,true
+TestData_Size,integer,desc of userattrint,desc of userattrint,false,true,false,false,0,TestData_Size,,,,,false
+TestData_Ratio,string,Percentage of records in the test data,Percentage of records in the test data,false,true,false,false,0,TestData_Ratio,,,,,true
+Train_Class_Distributions,string,class distributions,class distributions,true,true,false,false,0,Train_Class_Distributions,,,,,false

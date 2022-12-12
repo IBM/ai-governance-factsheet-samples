@@ -1,0 +1,5 @@
+name,type,description,placeholder,is_array,required,hidden,readonly,default_value,label,minimum,maximum,min_length,max_length,is_searchable
+model_scope,string,Model Scope,Model Scope,FALSE,TRUE,FALSE,FALSE,,Model Scope,,,2,1000,TRUE
+model_purpose,string,Model Purpose,Model Purpose,FALSE,TRUE,FALSE,FALSE,,Model Purpose,,,5,1000,TRUE
+model_use,string,Model Use,Model Use,TRUE,TRUE,FALSE,FALSE,,Model Use,,,5,500,TRUE
+model_sponsor,string,Model Sponsor,Model Sponsor,FALSE,TRUE,FALSE,FALSE,,Model Sponsor,,,5,200,TRUE
