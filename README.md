@@ -42,8 +42,8 @@ else:
         set_as_current_experiment=True
     )
 ```
-### **Region Specification**
 
+### Region Specification
 To use the IBM AI Gov Facts Client in different regions, specify the region where watsonx.governance is hosted. Examples for Frankfurt and Sydney:
 
 Sample Code:
@@ -101,7 +101,7 @@ This section demonstrate creating, listing, managing external models, deploying,
  
  | Notebook                            | Description                                                  |  Cloud   | CPD 4.8x | CPD 5.0x |
 | :---------------------------------- | :--------------------------------------------------------- |:--------:| :-----: |:--------:|
-| Getting Started with External Model in IBM Factsheet    | Demonstrates all features for external model provided by IBM AI Factsheet    | [link](https://github.com/IBM/ai-governance-factsheet-samples/blob/4082dfd199b9ba2c3a5a87f3a93519c8c1c1563f/cloud/External%20Model/External%20Model%20with%20wx.goverance%20IBM%20Cloud.ipynb) | [link](ttps://github.com/IBM/ai-governance-factsheet-samples/blob/4082dfd199b9ba2c3a5a87f3a93519c8c1c1563f/cloud_pak_for_data/4.8x%20Version/External%20Model/External%20Model%20with%20wx.goverance%204.8.x.ipynb) | [link](https://github.com/IBM/ai-governance-factsheet-samples/blob/4082dfd199b9ba2c3a5a87f3a93519c8c1c1563f/cloud_pak_for_data/5.0x%20Version/External%20Model/External%20Model%20with%20wx.goverance%205.0x.ipynb) |
+| Getting Started with External Model in IBM Factsheet    | Demonstrates all features for external model provided by IBM AI Factsheet    | [link](https://github.com/IBM/ai-governance-factsheet-samples/blob/4082dfd199b9ba2c3a5a87f3a93519c8c1c1563f/cloud/External%20Model/External%20Model%20with%20wx.goverance%20IBM%20Cloud.ipynb) | [link](https://github.com/IBM/ai-governance-factsheet-samples/blob/4082dfd199b9ba2c3a5a87f3a93519c8c1c1563f/cloud_pak_for_data/4.8x%20Version/External%20Model/External%20Model%20with%20wx.goverance%204.8.x.ipynb) | [link](https://github.com/IBM/ai-governance-factsheet-samples/blob/4082dfd199b9ba2c3a5a87f3a93519c8c1c1563f/cloud_pak_for_data/5.0x%20Version/External%20Model/External%20Model%20with%20wx.goverance%205.0x.ipynb) |
 
 
 
