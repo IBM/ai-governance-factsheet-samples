@@ -46,8 +46,6 @@ else:
 ### Region Specification
 To use the IBM AI Gov Facts Client in different regions, specify the region where watsonx.governance is hosted. Examples for Frankfurt and Sydney:
 
-Sample Code:
-
 - Sydney
 
 ```
