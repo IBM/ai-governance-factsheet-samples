@@ -28,17 +28,17 @@ Example:
 if use_software:
     facts_client = AIGovFactsClient(
         cloud_pak_for_data_configs=creds,
-        experiment_name=experiment_name,
-        container_type=container_type,
-        container_id=container_id,
+        experiment_name=<experiment_name>,
+        container_type="space or project",
+        container_id=<space_id or project_id>,
         set_as_current_experiment=True
     )
 else: 
     facts_client = AIGovFactsClient(
-        api_key=API_KEY,
-        experiment_name=experiment_name,
-        container_type=container_type,
-        container_id=container_id,
+        api_key=<API_KEY>,
+        experiment_name=<experiment_name>,
+        container_type="space or project",
+        container_id=<space_id or project_id>,
         set_as_current_experiment=True
     )
 ```
