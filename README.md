@@ -1,21 +1,57 @@
-# ai-governance-factsheet-samples
-AI Governance factsheet sample assets, notebooks and applications.
+# IBM AI Factsheet Governance Samples
 
-**CLIENT DETAILS:**
+**Internal repository** for sample models, notebooks, and applications related to AI Governance Factsheets.
 
-- [IBM AI Governance Facts Client ](https://ibm-aigov-facts-client.mybluemix.net/#)
+## Overview
+
+**IBM AI Factsheet** is a component of **watsonx.governance**. It provides a systematic approach to collecting and managing facts about machine learning models. The `ibm_aigov_facts_client` is a Python SDK designed to collect and manage facts about models, including gathering details from external models and prompts throughout their development lifecycle.
+
+Our Python client library facilitates the collection of facts from various experiments conducted within Jupyter notebooks, whether hosted on IBM Cloud, external Machine Learning Engines, or in standalone environments.
+
+## End-to-End Workflow Notebooks
+
+This section demonstrates the creation of a machine learning model while covering all features provided by IBM AI Factsheets, such as:
+- Trace and Customize Training Run
+- Export Training Facts
+- Inventory Management
+- Additional Training Information
+- Custom Facts
+- Capture Cell Facts
+- Associate Workspaces
+- Governing AI Assets
+- AI usecase Approaches 
+
+| Notebook                            | Description                                                  | Cloud | CPD 4.8x | CPD 5.0x |
+| :---------------------------------- | :--------------------------------------------------------- | :---: | :-----: | :-----: |
+| End-to-End Workflow Notebook        | Demonstrates all features provided by IBM AI Factsheet    | [link](1) | [link](link2) | [link](3) |
+| Inventory Management Notebook        | Demonstrates  managing inventories across various platforms. It includes detailed instructions for creating, updating, and managing inventories, as well as handling collaborator roles.   | [link](1) | [link](link2) | [link](3)  |
+| AI-usecase Approaches Notebook   |Create and manage models and AI use cases, showcasing various approaches and versioning (Major, Minor, Patch) for effective model tracking..   | [link](1) | [link](link2) | [link](3)  |
+
+## External Model Notebooks
+
+ This section demonstrate creating, listing, managing external models, deploying, and managing lifecycle phases for external models in IBM watsonx.governance.
+ 
+ | Notebook                            | Description                                                  | Cloud | CPD 4.8x | CPD 5.0x |
+| :---------------------------------- | :--------------------------------------------------------- | :---: | :-----: | :-----: |
+| Getting Started with External Model in IBM Factsheet    | Demonstrates all features for external model provided by IBM AI Factsheet    | [link](1) | [link](link2) | [link](3) |
 
 
-**Additional resources:**
 
-- [AI Factsheet](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/factsheets-model-inventory.html?audience=wdp)
+## Prompt Notebooks
 
-## Model and model use case assets:
+ This section covers managing prompt template assets for Language Models (LLMs) across various platforms, including:
 
-**Example 1: Custom development facts and global custom facts for model and model use case support**
+- Detached Prompts: Prompt on Third-Party Platforms Such as AWS Bedrock and Azure.
+- Standard Prompts: Created directly within the watsonx.ai platform.
+ 
+ | Notebook                            | Description                                                  | Cloud | CPD 5.0x |
+| :---------------------------------- | :--------------------------------------------------------- | :---: | :-----: |
+| End-to-End Detached PTA with Evalution    | Demonstrates entire workflow, from the creation of prompt template assets to their evaluation, ensuring a thorough understanding of both the setup and assessment phases.   | [link](1) | [link](2) |
+| Getting Started with Regular Prompt Notebook in IBM Factsheet  | Demonstrates  insights into the management and utilization of these prompt templates    | [link](1) | [link](2) |
 
-- Using external model, show custom development facts capture (manual log) and custom facts utilities for model and model use case - [notebook](https://github.com/IBM/ai-governance-factsheet-samples/blob/main/Assets/notebooks/Factsheet_Custom_Facts_Utilities.ipynb)
+ 
+ 
 
-**Example 2: Working with model asset environments in model use case**
 
-- Using Watson machine learning, building model, capturing facts using autolog, link to model use case and get/change model environment pillars - [notebook](https://github.com/IBM/ai-governance-factsheet-samples/blob/main/Assets/notebooks/Factsheet_Asset_Environments_Utilities.ipynb)
+
+
