@@ -23,7 +23,7 @@ This section demonstrates the creation of a machine learning model while coverin
 
 | Notebook                            | Description                                                  | Cloud | CPD 4.8x | CPD 5.0x |
 | :---------------------------------- | :--------------------------------------------------------- | :---: | :-----: | :-----: |
-| End-to-End Workflow Notebook        | Demonstrates all features provided by IBM AI Factsheet    | [link](1) | [link](link2) | [link](3) |
+| End-to-End Workflow Notebook        | Demonstrates all features provided by IBM AI Factsheet    | [link](https://github.com/LakshmiN5/ai-governance-factsheet-samples_public/blob/466b11175a129bc0100eeb96bd90132f6faf4bce/cloud/End%20To%20End%20Flow/End-to-End%20Workflow%20IBM%20Cloud.ipynb) | [link](link2) | [link](3) |
 | Inventory Management Notebook        | Demonstrates  managing inventories across various platforms. It includes detailed instructions for creating, updating, and managing inventories, as well as handling collaborator roles.   | [link](1) | [link](link2) | [link](3)  |
 | AI-usecase Approaches Notebook   |Create and manage models and AI use cases, showcasing various approaches and versioning (Major, Minor, Patch) for effective model tracking..   | [link](1) | [link](link2) | [link](3)  |
 
