@@ -1,6 +1,6 @@
 # IBM AI Factsheet Governance Samples
 
-**Internal repository** for sample models, notebooks, and applications related to AI Governance Factsheets.
+Repository for sample models, notebooks, and applications related to AI Governance Factsheets.
 
 ## Overview
 
@@ -8,6 +8,72 @@
 
 Our Python client library facilitates the collection of facts from various experiments conducted within Jupyter notebooks, whether hosted on IBM Cloud, external Machine Learning Engines, or in standalone environments.
 
+## Installation
+To install the IBM AI Governance Facts Client, ensure Python 3.7 or later is installed. Then, use pip:
+
+```
+ pip install ibm-aigov-facts-client
+```
+The package automatically installs required dependencies
+
+## Client Initialization
+To initialize the client, follow these guidelines:
+
+Container Type: Choose either space or project. Note that environment utilities (get/set) require the model asset to be stored in a Space.
+Experiment Management: If re-running the notebook with the same experiment name or encountering errors like Experiment with same name already exists, set set_as_current_experiment=True during client initialization.
+use_software Parameter: Set use_software=True if using IBM watsonx.governance software, or False if using IBM Cloud.
+
+Example:
+```
+if use_software:
+    facts_client = AIGovFactsClient(
+        cloud_pak_for_data_configs=creds,
+        experiment_name=experiment_name,
+        container_type=container_type,
+        container_id=container_id,
+        set_as_current_experiment=True
+    )
+else: 
+    facts_client = AIGovFactsClient(
+        api_key=API_KEY,
+        experiment_name=experiment_name,
+        container_type=container_type,
+        container_id=container_id,
+        set_as_current_experiment=True
+    )
+```
+### **Region Specification**
+
+To use the IBM AI Gov Facts Client in different regions, specify the region where watsonx.governance is hosted. Examples for Frankfurt and Sydney:
+
+Sample Code:
+
+- Sydney
+
+```
+from ibm_aigov_facts_client import AIGovFactsClient, CloudPakforDataConfig
+
+client = AIGovFactsClient(
+    api_key=<API_KEY>,
+    experiment_name=<experiment_name>,
+    container_type="space or project",
+    container_id=<space_id or project_id>,
+    region="sydney"
+)
+```
+- Frankfurt
+```from ibm_aigov_facts_client import AIGovFactsClient, CloudPakforDataConfig
+
+client = AIGovFactsClient(
+    api_key=<API_KEY>,
+    experiment_name=<experiment_name>,
+    container_type="space or project",
+    container_id=<space_id or project_id>,
+    region="frankfurt"
+)
+```
+
+# Notebooks Guidance
 ## End-to-End Workflow Notebooks
 
 This section demonstrates the creation of a machine learning model while covering all features provided by IBM AI Factsheets, such as:
@@ -29,7 +95,9 @@ This section demonstrates the creation of a machine learning model while coverin
 
 ## External Model Notebooks
 
- This section demonstrate creating, listing, managing external models, deploying, and managing lifecycle phases for external models in IBM watsonx.governance.
+With watsonx.governance or AI Factsheets, you can manage models created outside IBM Cloud Pak for Data, including those from platforms like AWS or Azure. These tools allow you to track model performance and evaluation results in detailed factsheets, ensuring compliance and transparency. 
+
+This section demonstrate creating, listing, managing external models, deploying, and managing lifecycle phases for external models in IBM watsonx.governance.
  
  | Notebook                            | Description                                                  | Cloud | CPD 4.8x | CPD 5.0x |
 | :---------------------------------- | :--------------------------------------------------------- | :---: | :-----: | :-----: |
