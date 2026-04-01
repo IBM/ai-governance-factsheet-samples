@@ -10,6 +10,11 @@
 
 **/.DS_Store
 
+# Environment variables
+.env
+.env.local
+.env.*.local
+
 *tests/config/*
 metastore_db/log/README_DO_NOT_TOUCH_FILES.txt
 
